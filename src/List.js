@@ -12,7 +12,12 @@ function List(props) {
       <header className="List-header" id={props.id}>
         <h2>{props.header}</h2>
       </header>
-      <div className="List-cards">{Cards}</div>
+      <div className="List-cards">
+        {Cards}
+        <button type="button" class="List-add-button">
+          + Add Random Card
+        </button>
+      </div>
     </section>
   );
 }
