@@ -12,8 +12,10 @@ function App(props) {
     // console.log(allCards);
     let targetCards = allCards.filter((card) => ids.includes(card.id) === true);
     // console.log(targetCards);
-    return <List {...list} key={i} header={list.header} cards={targetCards} />;
+    return <List key={i} header={list.header} cards={targetCards} />;
   });
+
+  // console.log(Lists);
 
   return (
     <main className="App">
